@@ -96,11 +96,11 @@
     /* ── ABOUT ── */
     .about-grid { display:grid; grid-template-columns:1fr 1fr; gap:80px; align-items:center; }
     .section-body { font-size:0.97rem; line-height:2.05; color:var(--grey-mid); max-width:540px; }
-    .about-card { background:var(--grey-dark); border-radius:3px; padding:52px 44px; position:relative; overflow:hidden; }
+    .about-card { background:var(--white); border:1px solid var(--border-grey); border-radius:3px; padding:52px 44px; position:relative; overflow:hidden; }
     .about-card::before { content:'🐾'; position:absolute; bottom:-16px; right:-8px; font-size:110px; opacity:0.06; line-height:1; }
     .about-card::after { content:''; position:absolute; top:0; left:0; right:0; height:3px; background:linear-gradient(90deg, var(--teal), var(--blue)); }
-    .about-quote { font-family:'Noto Serif TC',serif; font-size:1.25rem; font-style:italic; line-height:1.85; color:var(--white); margin-bottom:20px; }
-    .about-quote-attr { font-size:0.76rem; letter-spacing:0.15em; color:var(--teal-light); }
+    .about-quote { font-family:'Noto Serif TC',serif; font-size:1.25rem; font-style:italic; line-height:1.85; color:var(--grey-dark); margin-bottom:20px; }
+    .about-quote-attr { font-size:0.76rem; letter-spacing:0.15em; color:var(--teal-dark); }
 
     /* ── SERVICE AREA ── */
     .area-section { background:var(--teal-pale); padding:72px 80px; }
@@ -166,7 +166,7 @@
     .menu-row { display:flex; align-items:baseline; padding:10px 0; border-bottom:1px dashed rgba(74,85,104,0.1); transition:padding 0.15s; }
     .menu-row:last-child { border-bottom:none; }
     .menu-row:hover { padding-left:5px; }
-    .menu-row-left { display:flex; align-items:baseline; gap:8px; flex:1; min-width:0; flex-wrap:wrap; }
+    .menu-row-left { display:flex; align-items:baseline; gap:6px; flex:1; min-width:0; flex-wrap:wrap; }
     .menu-item-name { font-size:0.93rem; color:var(--grey-dark); }
     .menu-item-name-en { font-size:0.75rem; color:var(--grey-light); font-style:italic; display:inline; }
     .menu-dots { flex:1; border-bottom:1px dotted rgba(74,85,104,0.15); margin:0 10px 3px; min-width:16px; }
@@ -317,6 +317,12 @@
       .tab-panel { padding-top:24px; }
 
       .menu-2col { grid-template-columns:1fr; gap:0; }
+      .menu-row { flex-wrap:wrap; }
+      .menu-row-left { flex:0 0 100%; flex-wrap:nowrap; align-items:center; }
+      .menu-item-name { flex-shrink:0; }
+      .menu-item-name-en { flex-shrink:1; min-width:0; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
+      .menu-dots { display:none; }
+      .menu-price { margin-left:auto; }
       .locations-grid { grid-template-columns:1fr; }
       footer { padding:44px 20px; }
       #events { padding: 56px 20px !important; }
@@ -417,67 +423,9 @@
     </div>
   </div>
 </div></section>
-<!-- STATS -->
-<div class="stats-wrap"><div class="stats-row">
-  <div class="stat-item">
-    <div class="stat-number" style="font-size:2rem;letter-spacing:-0.01em">週二～日</div>
-    <div class="stat-label" style="margin-top:6px">每週營業</div>
-    <div style="font-size:0.72rem;color:var(--grey-light);margin-top:4px;letter-spacing:0.06em">週一公休</div>
-  </div>
-  <div class="stat-item">
-    <div class="stat-number">9<span style="font-size:1.3rem">am</span></div>
-    <div class="stat-label">開門時間</div>
-  </div>
-  <div class="stat-item">
-    <div class="stat-number">6<span style="font-size:1.3rem">pm</span></div>
-    <div class="stat-label">打烊時間</div>
-  </div>
-  <div class="stat-item">
-    <div class="stat-number">🐾</div>
-    <div class="stat-label">寵物友善空間</div>
-    <div style="font-size:0.72rem;color:var(--teal-dark);margin-top:4px;letter-spacing:0.06em;font-weight:500">毛孩可落地奔跑</div>
-  </div>
-</div></div>
 
-<!-- SERVICES -->
-<section id="services" class="services-section"><div class="services-inner">
-  <p class="section-label">Services・服務項目</p>
-  <h2 class="section-title" style="color:var(--white)">咖啡廳提供的<br>每一種美好</h2>
-  <div class="services-grid">
-    <div class="service-card">
-      <span class="service-icon">☕</span>
-      <h3 class="service-name">精品咖啡 & 飲品</h3>
-      <p class="service-desc">虹吸單品、義式濃縮到各式茶拿鐵與氣泡飲，每一杯皆現點現做，咖啡豆均為 100% 精選進口豆。</p>
-    </div>
-    <div class="service-card">
-      <!-- Hot press toast SVG icon replacing croissant emoji -->
-      <span class="service-icon">
-        <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <!-- bottom slice -->
-          <rect x="3" y="21" width="30" height="11" rx="3" fill="#c8955a"/>
-          <rect x="3" y="21" width="30" height="3" rx="2" fill="#b07840"/>
-          <!-- cheese -->
-          <rect x="4" y="18" width="28" height="5" rx="2.5" fill="#f5c842" opacity="0.9"/>
-          <!-- filling -->
-          <rect x="5" y="15" width="26" height="5" rx="2" fill="#e8a97e" opacity="0.85"/>
-          <!-- top slice -->
-          <rect x="3" y="4" width="30" height="12" rx="3" fill="#d9a96a"/>
-          <rect x="3" y="4" width="30" height="3" rx="2" fill="#c08850"/>
-          <!-- grill marks -->
-          <line x1="10" y1="7" x2="10" y2="13" stroke="#b07840" stroke-width="1.5" stroke-linecap="round" opacity="0.5"/>
-          <line x1="17" y1="6" x2="17" y2="14" stroke="#b07840" stroke-width="1.5" stroke-linecap="round" opacity="0.5"/>
-          <line x1="24" y1="7" x2="24" y2="13" stroke="#b07840" stroke-width="1.5" stroke-linecap="round" opacity="0.5"/>
-          <!-- steam -->
-          <path d="M12 2 Q13.5 0 12 -2" stroke="#7fcac6" stroke-width="1.2" stroke-linecap="round" fill="none" opacity="0.7"/>
-          <path d="M18 1 Q19.5 -1 18 -3" stroke="#7fcac6" stroke-width="1.2" stroke-linecap="round" fill="none" opacity="0.6"/>
-          <path d="M24 2 Q25.5 0 24 -2" stroke="#7fcac6" stroke-width="1.2" stroke-linecap="round" fill="none" opacity="0.7"/>
-        </svg>
-      </span>
-      <h3 class="service-name">熱壓吐司 & 輕食</h3>
-      <p class="service-desc">多款現壓熱吐司三明治與黃金脆吐司，從榛果奶油、鮪魚玉米到松露起司，熱騰騰現做讓你大滿足。</p>
-    </div>
-  </div>
-</div></section>
+
+
 
 <!-- MENU -->
 <section id="menu" class="menu-section"><div class="menu-inner">
