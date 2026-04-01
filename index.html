@@ -438,6 +438,8 @@
   <div class="menu-tabs">
     <button class="tab-btn active" onclick="switchTab(event,'tab-brunch')">🌅 早午餐</button>
     <button class="tab-btn" onclick="switchTab(event,'tab-food')">🥪 輕食</button>
+    <button class="tab-btn" onclick="switchTab(event,'tab-lasagna')">🍝 千層麵・燉飯</button>
+    <button class="tab-btn" onclick="switchTab(event,'tab-fried')">🍟 炸物・經典早餐</button>
     <button class="tab-btn" onclick="switchTab(event,'tab-coffee')">☕ 咖啡</button>
     <button class="tab-btn" onclick="switchTab(event,'tab-tea')">🍵 茶飲</button>
     <button class="tab-btn" onclick="switchTab(event,'tab-soda')">🫧 氣泡飲・果汁</button>
@@ -472,6 +474,21 @@
             <span class="brunch-tag">🥐 鹽可頌</span>
             <span class="brunch-tag">🌭 德式香腸</span>
             <span class="brunch-tag">🍳 雙太陽蛋（半熟）or 嫩炒蛋</span>
+            <span class="brunch-tag">🥗 生菜沙拉</span>
+            <span class="brunch-tag">🥔 馬鈴薯泥</span>
+          </div>
+        </div>
+      </div>
+      <div class="brunch-set-card">
+        <div class="brunch-set-header">
+          <div class="brunch-set-title">牛肉漢堡排套餐</div>
+          <div class="brunch-set-price">$300</div>
+        </div>
+        <div class="brunch-set-body">
+          <div class="brunch-includes">
+            <span class="brunch-tag">🥐 原味可頌</span>
+            <span class="brunch-tag">🐄 漢堡排</span>
+            <span class="brunch-tag">🥚 嫩炒蛋</span>
             <span class="brunch-tag">🥗 生菜沙拉</span>
             <span class="brunch-tag">🥔 馬鈴薯泥</span>
           </div>
@@ -532,11 +549,9 @@
           <div class="menu-rows">
             <div class="menu-row"><div class="menu-row-left"><span class="menu-item-name">原味奶酥</span><span class="menu-item-name-en">Soufflé</span></div><div class="menu-dots"></div><span class="menu-price">90</span></div>
             <div class="menu-row"><div class="menu-row-left"><span class="menu-item-name">香蒜奶油</span><span class="menu-item-name-en">Garlic Butter</span></div><div class="menu-dots"></div><span class="menu-price">90</span></div>
-            <div class="menu-row"><div class="menu-row-left"><span class="menu-item-name">青醬</span><span class="menu-item-name-en">Pesto</span></div><div class="menu-dots"></div><span class="menu-price">90</span></div>
+            <div class="menu-row"><div class="menu-row-left"><span class="menu-item-name">原味奶酥</span><span class="menu-item-name-en">Soufflé</span></div><div class="menu-dots"></div><span class="menu-price">90</span></div>
             <div class="menu-row"><div class="menu-row-left"><span class="menu-item-name">可可奶酥</span><span class="menu-item-name-en">Cocoa Soufflé</span></div><div class="menu-dots"></div><span class="menu-price">95</span></div>
-            <div class="menu-row"><div class="menu-row-left"><span class="menu-item-name">肉桂奶酥</span><span class="menu-item-name-en">Cinnamon Soufflé</span></div><div class="menu-dots"></div><span class="menu-price">100</span></div>
-            <div class="menu-row"><div class="menu-row-left"><span class="menu-item-name">芝麻奶酥</span><span class="menu-item-name-en">Sesame Soufflé</span></div><div class="menu-dots"></div><span class="menu-price">100</span></div>
-            <div class="menu-row"><div class="menu-row-left"><span class="menu-item-name">鐵觀音奶酥</span><span class="menu-item-name-en">Te Guanyin Tea Soufflé</span></div><div class="menu-dots"></div><span class="menu-price">105</span></div>
+            <div class="menu-row"><div class="menu-row-left"><span class="menu-item-name">鐵觀音奶酥</span><span class="menu-item-name-en">TeGuanyin Tea Soufflé</span></div><div class="menu-dots"></div><span class="menu-price">105</span></div>
           </div>
         </div>
         <div class="menu-category" style="margin-top:28px">
@@ -552,18 +567,21 @@
           <div class="menu-cat-title">🐾 寵物鮮食 Dog Meal</div>
           <div class="menu-cat-sub">Fresh Pet Food</div>
           <div class="menu-rows">
-            <div class="menu-row"><div class="menu-row-left"><span class="menu-item-name">雞腿蔬菜</span><span class="menu-item-name-en">化骨舒肥雞腿</span></div><div class="menu-dots"></div><span class="menu-price">120</span></div>
-            <div class="menu-row"><div class="menu-row-left"><span class="menu-item-name">魚肉蔬菜</span><span class="menu-item-name-en">狗狗鮮食鮪魚罐頭</span></div><div class="menu-dots"></div><span class="menu-price">150</span></div>
-            <div class="menu-row"><div class="menu-row-left"><span class="menu-item-name">牛肉蔬菜</span><span class="menu-item-name-en">美國牛絞肉</span></div><div class="menu-dots"></div><span class="menu-price">200</span></div>
+            <div class="menu-row"><div class="menu-row-left"><span class="menu-item-name">雞腿蔬菜</span><span class="menu-item-name-en">使用化骨舒肥雞腿</span></div><div class="menu-dots"></div><span class="menu-price">120</span></div>
+            <div class="menu-row"><div class="menu-row-left"><span class="menu-item-name">牛肉蔬菜</span><span class="menu-item-name-en">使用美國牛絞肉</span></div><div class="menu-dots"></div><span class="menu-price">200</span></div>
           </div>
         </div>
         <div class="menu-category" style="margin-top:28px">
           <div class="menu-cat-title">🧁 甜點 &amp; 單點</div>
           <div class="menu-cat-sub">Sweets &amp; A la carte</div>
           <div class="menu-rows">
-            <div class="menu-row"><div class="menu-row-left"><span class="menu-item-name">甜點</span><span class="menu-item-name-en">Sweet・請至甜點櫃查看，每日不同</span></div><div class="menu-dots"></div><span class="menu-price">時價</span></div>
             <div class="menu-row"><div class="menu-row-left"><span class="menu-item-name">明治香草冰淇淋</span><span class="menu-item-name-en">Vanilla Ice Cream</span></div><div class="menu-dots"></div><span class="menu-price">50</span></div>
-            <div class="menu-row"><div class="menu-row-left"><span class="menu-item-name">生菜沙拉</span><span class="menu-item-name-en">Lettuce Salad（+蛋沙拉30 / +鮪魚玉米40 / +燻鮭魚50）</span></div><div class="menu-dots"></div><span class="menu-price">120</span></div>
+            <div class="menu-row"><div class="menu-row-left"><span class="menu-item-name">奶油司康</span><span class="menu-item-name-en">Scone with Butter</span></div><div class="menu-dots"></div><span class="menu-price">40</span></div>
+            <div class="menu-row"><div class="menu-row-left"><span class="menu-item-name">焦糖布蕾</span><span class="menu-item-name-en">Caramel Cream Brulee</span></div><div class="menu-dots"></div><span class="menu-price">75</span></div>
+            <div class="menu-row"><div class="menu-row-left"><span class="menu-item-name">巴斯克乳酪蛋糕</span><span class="menu-item-name-en">Basque Cheesecake</span></div><div class="menu-dots"></div><span class="menu-price">100</span></div>
+            <div class="menu-row"><div class="menu-row-left"><span class="menu-item-name">肉桂捲</span><span class="menu-item-name-en">Cinnamon Roll</span></div><div class="menu-dots"></div><span class="menu-price">120</span></div>
+            <div class="menu-row"><div class="menu-row-left"><span class="menu-item-name">生菜沙拉</span><span class="menu-item-name-en">Lettuce Salad（+蛋沙拉30 / +鮪魚玉米40 / +煙燻鮭魚50）</span></div><div class="menu-dots"></div><span class="menu-price">120</span></div>
+            <div class="menu-row"><div class="menu-row-left"><span class="menu-item-name">加冰淇淋</span><span class="menu-item-name-en">Add Ice Cream</span></div><div class="menu-dots"></div><span class="menu-price">+40</span></div>
           </div>
         </div>
       </div>
@@ -650,6 +668,7 @@
             <div class="menu-row"><div class="menu-row-left"><span class="menu-item-name">仙草茶</span><span class="menu-item-name-en">Grass Jelly Tea</span></div><div class="menu-dots"></div><span class="menu-price">100</span></div>
             <div class="menu-row"><div class="menu-row-left"><span class="menu-item-name">檸檬紅茶/綠茶</span><span class="menu-item-name-en">Lemon Black / Green Tea</span></div><div class="menu-dots"></div><span class="menu-price">110</span></div>
             <div class="menu-row"><div class="menu-row-left"><span class="menu-item-name">中國茶</span><span class="menu-item-name-en">文山包種/烏龍/紅茶/綠茶</span></div><div class="menu-dots"></div><span class="menu-price">110</span></div>
+            <div class="menu-row"><div class="menu-row-left"><span class="menu-item-name">花草茶</span><span class="menu-item-name-en">綜合水果茶 / 蜜桃紅茶 / 桔茶</span></div><div class="menu-dots"></div><span class="menu-price">120</span></div>
             <div class="menu-row"><div class="menu-row-left"><span class="menu-item-name">桂圓紅棗 / 黑糖薑茶</span><span class="menu-item-name-en">Longan Jujube / Brown Sugar Ginger</span></div><div class="menu-dots"></div><span class="menu-price">120</span></div>
           </div>
         </div>
@@ -675,6 +694,67 @@
       </div>
     </div>
   </div>
+
+  <!-- 千層麵・燉飯 -->
+  <div id="tab-lasagna" class="tab-panel">
+    <div class="menu-2col">
+      <div>
+        <div class="menu-category">
+          <div class="menu-cat-title">🍝 千層麵 Lasagna</div>
+          <div class="menu-cat-sub">Baked Lasagna</div>
+          <div class="menu-rows">
+            <div class="menu-row"><div class="menu-row-left"><span class="menu-item-name">焗烤番茄牛肉千層麵</span><span class="menu-item-name-en">Baked Tomato Beef Lasagna with Cheese</span></div><div class="menu-dots"></div><span class="menu-price">280</span></div>
+            <div class="menu-row"><div class="menu-row-left"><span class="menu-item-name">焗烤巧達海鮮千層麵</span><span class="menu-item-name-en">Baked Cream Seafood Lasagna with Cheese</span></div><div class="menu-dots"></div><span class="menu-price">280</span></div>
+            <div class="menu-row"><div class="menu-row-left"><span class="menu-item-name">焗烤奶油塔香野菇</span><span class="menu-item-name-en">Baked Cream Mushrooms Lasagna（蛋奶素）</span></div><div class="menu-dots"></div><span class="menu-price">280</span></div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="menu-category">
+          <div class="menu-cat-title">🫕 燉飯 Risotto</div>
+          <div class="menu-cat-sub">Risotto</div>
+          <div class="menu-rows">
+            <div class="menu-row"><div class="menu-row-left"><span class="menu-item-name">奶油鮭魚燉飯</span><span class="menu-item-name-en">Creamy Salmon Risotto</span></div><div class="menu-dots"></div><span class="menu-price">250</span></div>
+            <div class="menu-row"><div class="menu-row-left"><span class="menu-item-name">茄汁辣味雞丁燉飯</span><span class="menu-item-name-en">Spicy Tomato Chicken Risotto</span></div><div class="menu-dots"></div><span class="menu-price">250</span></div>
+            <div class="menu-row"><div class="menu-row-left"><span class="menu-item-name">青醬菇菇菱角燉飯</span><span class="menu-item-name-en">Pesto Mushroom Risotto（蛋奶素）</span></div><div class="menu-dots"></div><span class="menu-price">250</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="menu-footnote">＊加焗烤 +$30 ／ 皆含飲料：美式咖啡 / 紅茶 / 綠茶 擇一；欲換其他飲品可折抵 $50</div>
+  </div>
+
+  <!-- 炸物・經典早餐 -->
+  <div id="tab-fried" class="tab-panel">
+    <div class="menu-2col">
+      <div>
+        <div class="menu-category">
+          <div class="menu-cat-title">🍟 炸物小點</div>
+          <div class="menu-cat-sub">Fried Snacks・單點 $100</div>
+          <div class="menu-rows">
+            <div class="menu-row"><div class="menu-row-left"><span class="menu-item-name">洋蔥圈</span><span class="menu-item-name-en">Onion Rings</span></div><div class="menu-dots"></div><span class="menu-price">100</span></div>
+            <div class="menu-row"><div class="menu-row-left"><span class="menu-item-name">三角薯餅</span><span class="menu-item-name-en">Hash Brown Triangle</span></div><div class="menu-dots"></div><span class="menu-price">100</span></div>
+            <div class="menu-row"><div class="menu-row-left"><span class="menu-item-name">波浪薯條</span><span class="menu-item-name-en">Crinkle Fries</span></div><div class="menu-dots"></div><span class="menu-price">100</span></div>
+            <div class="menu-row"><div class="menu-row-left"><span class="menu-item-name">香酥雞腿塊</span><span class="menu-item-name-en">Fried Chicken Thighs</span></div><div class="menu-dots"></div><span class="menu-price">100</span></div>
+          </div>
+        </div>
+        <div class="menu-footnote" style="margin-top:12px">任選兩款組合價 $180</div>
+      </div>
+      <div>
+        <div class="menu-category">
+          <div class="menu-cat-title">🌄 經典早餐</div>
+          <div class="menu-cat-sub">Classic Breakfast・$100 ★ 平日限定 週二～週五 9:00–11:00</div>
+          <div class="menu-rows">
+            <div class="menu-row"><div class="menu-row-left"><span class="menu-item-name">烤吐司</span><span class="menu-item-name-en">Toast</span></div><div class="menu-dots"></div><span class="menu-price">—</span></div>
+            <div class="menu-row"><div class="menu-row-left"><span class="menu-item-name">抹醬擇一</span><span class="menu-item-name-en">奶油 / 草莓 / 蜂蜜</span></div><div class="menu-dots"></div><span class="menu-price">—</span></div>
+            <div class="menu-row"><div class="menu-row-left"><span class="menu-item-name">飲品擇一</span><span class="menu-item-name-en">美式咖啡 / 紅茶 / 綠茶</span></div><div class="menu-dots"></div><span class="menu-price">—</span></div>
+          </div>
+        </div>
+        <div class="menu-footnote" style="margin-top:12px">+$60 可升級蛋沙拉 or 鮪魚玉米（附生菜）</div>
+      </div>
+    </div>
+  </div>
+
 
   <!-- 氣泡飲・果汁 -->
   <div id="tab-soda" class="tab-panel">
